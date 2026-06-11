@@ -4,17 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="index, follow" />
-  <title>Delete your Trod account</title>
-  <meta name="description" content="How to permanently delete your Trod account and all associated data." />
+  <title>Trod — Legal</title>
+  <meta name="description" content="Legal and account pages for Trod, the walking exploration game: privacy policy, terms of service, account deletion." />
   <style>
     :root {
-      --bg: #0F1117;
-      --surface: #1C2333;
-      --text: #F5F0E8;
-      --muted: #9AA3B2;
+      --bg: #f9faf1;
+      --surface: #fbf8f1;
+      --text: #1a1c17;
+      --muted: rgba(26, 28, 23, 0.62);
       --accent: #C9A84C;
-      --danger: #EF4444;
-      --border: rgba(245, 240, 232, 0.12);
+      --green: #2d5016;
+      --border: rgba(26, 28, 23, 0.09);
     }
     * { box-sizing: border-box; }
     html, body { margin: 0; padding: 0; background: var(--bg); }
@@ -33,22 +33,27 @@
       color: var(--accent);
       margin-bottom: 8px;
     }
-    h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; font-weight: 700; }
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 32px; line-height: 1.2; margin: 0 0 8px; font-weight: 700;
+    }
     .lede { color: var(--muted); font-size: 17px; margin: 0 0 32px; }
-    h2 { font-size: 18px; margin: 36px 0 12px; }
-    .card {
+    a.cardlink {
+      display: block;
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 14px;
       padding: 20px 24px;
       margin: 16px 0;
+      color: var(--text);
+      text-decoration: none;
     }
-    ol, ul { margin: 0; padding-left: 22px; }
-    li { margin: 8px 0; }
-    .path { color: var(--accent); font-weight: 600; }
-    a { color: var(--accent); }
-    .muted { color: var(--muted); }
-    .danger { color: var(--danger); font-weight: 600; }
+    a.cardlink:hover { border-color: var(--accent); }
+    .cardlink h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px; margin: 0 0 6px; color: var(--green);
+    }
+    .cardlink p { margin: 0; color: var(--muted); font-size: 15px; }
     .foot {
       margin-top: 48px;
       padding-top: 20px;
@@ -56,56 +61,36 @@
       color: var(--muted);
       font-size: 14px;
     }
+    a { color: var(--green); text-decoration-color: var(--accent); }
   </style>
 </head>
 <body>
   <main class="wrap">
     <div class="brand">Trod</div>
-    <h1>Delete your account</h1>
+    <h1>Trod legal pages</h1>
     <p class="lede">
-      You can permanently delete your Trod account and all of your data at any
-      time, directly from the app.
+      Trod is a walking exploration game — walk in the real world and reveal
+      the map. These pages explain how we treat your data and the rules of
+      the road.
     </p>
 
-    <h2>Delete from inside the app</h2>
-    <div class="card">
-      <ol>
-        <li>Open <strong>Trod</strong> and go to the <span class="path">You</span> tab.</li>
-        <li>Open <span class="path">Settings</span>.</li>
-        <li>Under <span class="path">Account</span>, tap <span class="path">Delete Account</span>.</li>
-        <li>Confirm when prompted. <span class="danger">This cannot be undone.</span></li>
-      </ol>
-    </div>
+    <a class="cardlink" href="./privacy.html">
+      <h2>Privacy Policy</h2>
+      <p>What we collect, what we never collect (your raw GPS never reaches our servers), and your rights.</p>
+    </a>
 
-    <h2>What gets deleted</h2>
-    <div class="card">
-      <p style="margin-top:0;">When you delete your account we permanently remove:</p>
-      <ul>
-        <li>Your account and sign-in details</li>
-        <li>Your explored map (everywhere you have revealed)</li>
-        <li>Landmarks you have found and your walking progress</li>
-        <li>Your profile and any saved preferences</li>
-      </ul>
-      <p class="muted" style="margin-bottom:0;">
-        Deletion is immediate and permanent. We do not keep a personal copy of
-        your data after your account is deleted. Anonymous, aggregated crash
-        diagnostics that cannot identify you may be retained for stability.
-      </p>
-    </div>
+    <a class="cardlink" href="./terms.html">
+      <h2>Terms of Service</h2>
+      <p>Fair play, walking safety, ownership, and the legal details.</p>
+    </a>
 
-    <h2>Can&rsquo;t open the app?</h2>
-    <div class="card">
-      <p style="margin:0;">
-        Email
-        <a href="mailto:ajruli.omar@gmail.com?subject=Trod%20account%20deletion%20request">ajruli.omar@gmail.com</a>
-        from the email address on your account and ask us to delete it. We will
-        complete the deletion within 30 days and confirm by reply.
-      </p>
-    </div>
+    <a class="cardlink" href="./delete-account.html">
+      <h2>Delete your account</h2>
+      <p>How to permanently delete your account and all associated data — directly from the app.</p>
+    </a>
 
     <div class="foot">
-      Trod &middot; Last updated 7 June 2026 &middot;
-      <a href="mailto:ajruli.omar@gmail.com">ajruli.omar@gmail.com</a>
+      Trod &middot; <a href="mailto:ajruli.omar@gmail.com">ajruli.omar@gmail.com</a>
     </div>
   </main>
 </body>

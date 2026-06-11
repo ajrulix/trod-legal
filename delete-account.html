@@ -8,13 +8,14 @@
   <meta name="description" content="How to permanently delete your Trod account and all associated data." />
   <style>
     :root {
-      --bg: #0F1117;
-      --surface: #1C2333;
-      --text: #F5F0E8;
-      --muted: #9AA3B2;
+      --bg: #f9faf1;
+      --surface: #fbf8f1;
+      --text: #1a1c17;
+      --muted: rgba(26, 28, 23, 0.62);
       --accent: #C9A84C;
-      --danger: #EF4444;
-      --border: rgba(245, 240, 232, 0.12);
+      --green: #2d5016;
+      --danger: #b3261e;
+      --border: rgba(26, 28, 23, 0.09);
     }
     * { box-sizing: border-box; }
     html, body { margin: 0; padding: 0; background: var(--bg); }
@@ -33,9 +34,15 @@
       color: var(--accent);
       margin-bottom: 8px;
     }
-    h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; font-weight: 700; }
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 32px; line-height: 1.2; margin: 0 0 8px; font-weight: 700;
+    }
     .lede { color: var(--muted); font-size: 17px; margin: 0 0 32px; }
-    h2 { font-size: 18px; margin: 36px 0 12px; }
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px; margin: 36px 0 12px;
+    }
     .card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -45,8 +52,8 @@
     }
     ol, ul { margin: 0; padding-left: 22px; }
     li { margin: 8px 0; }
-    .path { color: var(--accent); font-weight: 600; }
-    a { color: var(--accent); }
+    .path { color: var(--green); font-weight: 600; }
+    a { color: var(--green); text-decoration-color: var(--accent); }
     .muted { color: var(--muted); }
     .danger { color: var(--danger); font-weight: 600; }
     .foot {
@@ -104,7 +111,8 @@
     </div>
 
     <div class="foot">
-      Trod &middot; Last updated 7 June 2026 &middot;
+      Trod &middot; Last updated 11 June 2026 &middot;
+      <a href="./index.html">All Trod legal pages</a> &middot;
       <a href="mailto:ajruli.omar@gmail.com">ajruli.omar@gmail.com</a>
     </div>
   </main>

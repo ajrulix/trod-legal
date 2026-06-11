@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+  <title>Trod — Privacy Policy</title>
+  <meta name="description" content="Privacy policy for Trod, the walking exploration game. What we collect, what we never collect, and your rights." />
+  <style>
+    :root {
+      --bg: #f9faf1;
+      --surface: #fbf8f1;
+      --text: #1a1c17;
+      --muted: rgba(26, 28, 23, 0.62);
+      --accent: #C9A84C;
+      --green: #2d5016;
+      --border: rgba(26, 28, 23, 0.09);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); }
+    body {
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; }
+    .brand {
+      font-family: Georgia, "Times New Roman", serif;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 32px; line-height: 1.2; margin: 0 0 8px; font-weight: 700;
+    }
+    .lede { color: var(--muted); font-size: 17px; margin: 0 0 32px; }
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px; margin: 36px 0 12px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 24px;
+      margin: 16px 0;
+    }
+    ol, ul { margin: 0; padding-left: 22px; }
+    li { margin: 8px 0; }
+    a { color: var(--green); text-decoration-color: var(--accent); }
+    .muted { color: var(--muted); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { text-align: left; padding: 8px 10px 8px 0; vertical-align: top; border-bottom: 1px solid var(--border); }
+    th { color: var(--muted); font-weight: 600; }
+    tr:last-child td { border-bottom: none; }
+    .foot {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="brand">Trod</div>
+    <h1>Privacy Policy</h1>
+    <p class="lede">
+      Trod is a walking exploration game: you walk in the real world and the
+      map reveals where you have been. That only works if you trust us with
+      how location is handled — so this policy is written to be read.
+    </p>
+
+    <h2>The short version</h2>
+    <div class="card">
+      <ul>
+        <li>Your phone converts GPS positions into <strong>hexagonal map areas roughly 175&nbsp;m wide</strong>, on the device. Only those area identifiers are saved to your account — <strong>your raw GPS coordinates are never stored on our servers</strong>.</li>
+        <li>We don&rsquo;t sell your data, we don&rsquo;t show ads, and we don&rsquo;t use advertising identifiers.</li>
+        <li>Walking mode (screen-off reveal) works the same way: positions become map areas on your phone; nothing more leaves it.</li>
+        <li>You can delete your account and all of its data from inside the app, immediately.</li>
+      </ul>
+    </div>
+
+    <h2>1. Who we are</h2>
+    <p>
+      Trod is operated by <strong>Omar Ajruli</strong>, an individual developer
+      based in Estonia (the &ldquo;we&rdquo; in this policy). Contact:
+      <a href="mailto:ajruli.omar@gmail.com">ajruli.omar@gmail.com</a>.
+    </p>
+
+    <h2>2. What we collect</h2>
+    <div class="card">
+      <p style="margin-top:0;"><strong>Things you give us</strong></p>
+      <ul>
+        <li>Account details when you sign up: your email address, and your name and avatar if you sign in with Google. Guest play needs no account; guest progress stays on your phone until you sign in.</li>
+        <li>Profile choices like your display name.</li>
+      </ul>
+      <p><strong>Things created by playing</strong></p>
+      <ul>
+        <li>Your explored map: the ~175&nbsp;m hexagonal areas you have revealed, derived on the device from GPS. We cannot reconstruct your exact route from them.</li>
+        <li>Landmarks you mark as visited, quest and passport progress, and per-city exploration percentages.</li>
+        <li>App settings, stored on your phone.</li>
+      </ul>
+      <p><strong>Optional, only if you turn it on</strong></p>
+      <ul>
+        <li>Step counting uses your phone&rsquo;s step sensor after you grant the physical-activity permission. Steps are counted and shown on your device; they are not uploaded.</li>
+      </ul>
+      <p style="margin-bottom:0;"><strong>Diagnostics</strong></p>
+      <ul>
+        <li>If the app crashes or errors, a crash report is sent to Sentry (see section 4). Reports are scrubbed of coordinates and personal identifiers before sending and include technical context like app version, OS version and device model.</li>
+      </ul>
+    </div>
+
+    <h2>3. What we never collect</h2>
+    <div class="card">
+      <ul>
+        <li>Raw GPS coordinates on our servers — conversion to map areas happens on the device.</li>
+        <li>A continuous location history or your routes.</li>
+        <li>&ldquo;Background location&rdquo; in the Android permission sense — Trod never requests that permission. Walking mode runs as a visible, user-started service with an ongoing notification, using the normal &ldquo;while using the app&rdquo; permission.</li>
+        <li>Your contacts, photos, microphone, camera, or advertising ID.</li>
+      </ul>
+    </div>
+
+    <h2>4. Third parties we rely on</h2>
+    <div class="card">
+      <table>
+        <tr><th>Service</th><th>What it does</th><th>What it receives</th></tr>
+        <tr><td><strong>Supabase</strong></td><td>Sign-in and database</td><td>Your account data and explored map areas. Hosted in the EU (Ireland, eu-west-1), encrypted in transit and at rest, with per-user access rules.</td></tr>
+        <tr><td><strong>MapTiler</strong></td><td>The base map</td><td>Standard tile requests: your IP address, device user-agent and which map tiles you view (inherent to any online map).</td></tr>
+        <tr><td><strong>Open-Meteo</strong></td><td>Weather on the map</td><td>An approximate location rounded to roughly an 11&nbsp;km grid — enough for a city forecast, not your position.</td></tr>
+        <tr><td><strong>Sentry</strong></td><td>Crash reporting</td><td>Crash and error reports, scrubbed of coordinates and personal identifiers before sending.</td></tr>
+        <tr><td><strong>Google</strong></td><td>Optional sign-in</td><td>Only used if you choose &ldquo;Sign in with Google&rdquo;; standard OAuth sign-in data.</td></tr>
+      </table>
+      <p class="muted" style="margin-bottom:0;">We do not use advertising or marketing analytics services.</p>
+    </div>
+
+    <h2>5. How we use your data</h2>
+    <ul>
+      <li>To run the game: show your explored map, progress, landmarks and stamps on your devices.</li>
+      <li>To keep your progress safe across devices and reinstalls.</li>
+      <li>To fix crashes and keep the app stable.</li>
+      <li>Nothing else. No profiling, no ad targeting, no selling or renting data.</li>
+    </ul>
+
+    <h2>6. Your rights</h2>
+    <div class="card">
+      <p style="margin-top:0;">Under the GDPR (and similar laws) you can:</p>
+      <ul>
+        <li><strong>Delete</strong> — remove your account and all its data from inside the app (You&nbsp;&rsaquo;&nbsp;Settings&nbsp;&rsaquo;&nbsp;Delete&nbsp;Account), or see <a href="./delete-account.html">the deletion page</a>. Deletion is immediate and permanent.</li>
+        <li><strong>Access / export</strong> — email us and we will send you a copy of the data linked to your account.</li>
+        <li><strong>Correct</strong> — change your display name in the app, or email us for anything else.</li>
+        <li><strong>Object or withdraw consent</strong> — optional features (like step counting) can be turned off any time in Settings.</li>
+        <li><strong>Complain</strong> — you can lodge a complaint with your data-protection authority. In Estonia that is the Data Protection Inspectorate (Andmekaitse Inspektsioon, <a href="https://www.aki.ee" rel="noopener">aki.ee</a>).</li>
+      </ul>
+    </div>
+
+    <h2>7. Retention</h2>
+    <ul>
+      <li>Account and gameplay data: kept while your account exists.</li>
+      <li>On deletion: removed from production immediately; encrypted backups expire within 90&nbsp;days.</li>
+      <li>Crash reports: retained up to 90&nbsp;days, then deleted.</li>
+    </ul>
+
+    <h2>8. Children</h2>
+    <p>
+      Trod is not directed at children under 13 (under 16 in the EU where that
+      is the age of digital consent). We do not knowingly collect data from
+      children below those ages; if you believe a child has created an
+      account, contact us and we will delete it.
+    </p>
+
+    <h2>9. Security</h2>
+    <p>
+      Data is encrypted in transit (TLS) and at rest. Database access is
+      restricted by per-user rules so one account can never read another&rsquo;s
+      data. No method is 100% secure, but location-grade data is exactly why
+      we designed the system so your precise positions never reach a server
+      in the first place.
+    </p>
+
+    <h2>10. International transfers</h2>
+    <p>
+      Your account data is hosted in the European Union. Where a service
+      provider processes data outside the EEA (for example crash reporting),
+      transfers rely on standard contractual clauses or an equivalent
+      safeguard.
+    </p>
+
+    <h2>11. Changes</h2>
+    <p>
+      If this policy changes in a meaningful way we will update this page and
+      note it in the app. The date below always reflects the current version.
+    </p>
+
+    <h2>12. Contact</h2>
+    <p>
+      Omar Ajruli &middot; Estonia &middot;
+      <a href="mailto:ajruli.omar@gmail.com">ajruli.omar@gmail.com</a>
+    </p>
+
+    <div class="foot">
+      Trod &middot; Privacy Policy &middot; Effective 11 June 2026 &middot;
+      <a href="./index.html">All Trod legal pages</a>
+    </div>
+  </main>
+</body>
+</html>
