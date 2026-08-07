@@ -4,190 +4,183 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="index, follow" />
-  <title>Trod — Terms of Service</title>
-  <meta name="description" content="Terms of service for Trod, the walking exploration game." />
+  <title>Terms of Service | Trod</title>
+  <meta name="description" content="The terms for using Trod, including account rules, safe exploration, fair play, social sharing, community gems, and account deletion." />
+  <link rel="canonical" href="https://gettrod.com/terms" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Trod Terms of Service" />
+  <meta property="og:description" content="The rules for using Trod safely and fairly." />
+  <meta property="og:url" content="https://gettrod.com/terms" />
   <style>
     :root {
       --bg: #f9faf1;
-      --surface: #fbf8f1;
+      --surface: #fffdf7;
       --text: #1a1c17;
-      --muted: rgba(26, 28, 23, 0.62);
-      --accent: #C9A84C;
+      --muted: #62675d;
+      --accent: #8a6f23;
       --green: #2d5016;
-      --border: rgba(26, 28, 23, 0.09);
+      --border: #d9dccf;
     }
     * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; background: var(--bg); }
+    html { color-scheme: light; }
     body {
+      margin: 0;
+      background: var(--bg);
       color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
       -webkit-font-smoothing: antialiased;
     }
-    .wrap { max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; }
-    .brand {
-      font-family: Georgia, "Times New Roman", serif;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      font-size: 14px;
-      color: var(--accent);
-      margin-bottom: 8px;
-    }
-    h1 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 32px; line-height: 1.2; margin: 0 0 8px; font-weight: 700;
-    }
-    .lede { color: var(--muted); font-size: 17px; margin: 0 0 32px; }
-    h2 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 20px; margin: 36px 0 12px;
-    }
-    .card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 20px 24px;
-      margin: 16px 0;
-    }
-    ol, ul { margin: 0; padding-left: 22px; }
-    li { margin: 8px 0; }
-    a { color: var(--green); text-decoration-color: var(--accent); }
-    .muted { color: var(--muted); }
-    .foot {
-      margin-top: 48px;
-      padding-top: 20px;
-      border-top: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 14px;
+    .wrap { width: min(760px, calc(100% - 40px)); margin: 0 auto; padding: 28px 0 80px; }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 54px; }
+    .brand { color: var(--accent); font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-decoration: none; text-transform: uppercase; }
+    .nav a:not(.brand) { color: var(--green); font-size: 14px; }
+    h1, h2 { font-family: Georgia, "Times New Roman", serif; color: var(--text); }
+    h1 { margin: 0 0 10px; font-size: clamp(34px, 7vw, 48px); line-height: 1.08; }
+    h2 { margin: 42px 0 12px; font-size: 23px; line-height: 1.25; }
+    p { margin: 0 0 16px; }
+    .lede { margin-bottom: 12px; color: var(--muted); font-size: 18px; }
+    .date { color: var(--muted); font-size: 14px; }
+    .card { margin: 18px 0; padding: 22px 24px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; }
+    ul, ol { margin: 0; padding-left: 22px; }
+    li { margin: 9px 0; }
+    a { color: var(--green); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid #c9a84c; outline-offset: 3px; border-radius: 2px; }
+    footer { margin-top: 56px; padding-top: 22px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 8px; }
+    @media (max-width: 540px) {
+      .wrap { width: min(100% - 28px, 760px); padding-top: 20px; }
+      .nav { margin-bottom: 40px; }
+      .card { padding: 18px; }
     }
   </style>
 </head>
 <body>
   <main class="wrap">
-    <div class="brand">Trod</div>
+    <nav class="nav" aria-label="Legal navigation">
+      <a class="brand" href="https://gettrod.com/">Wanderlab / Trod</a>
+      <a href="./index.html">Legal pages</a>
+    </nav>
+
     <h1>Terms of Service</h1>
-    <p class="lede">
-      Trod is a game you play by walking in the real world. These terms keep
-      it fair, safe and sustainable — please read them, they are short.
-    </p>
+    <p class="lede">Trod is a real-world exploration game. These terms set the ground rules for using it safely, fairly, and respectfully.</p>
+    <p class="date">Effective 7 August 2026</p>
 
-    <h2>1. Who we are</h2>
-    <p>
-      Trod is operated by <strong>Omar Ajruli</strong>, an individual developer
-      based in Estonia. Contact:
-      <a href="mailto:ajruli.omar@gmail.com">ajruli.omar@gmail.com</a>.
-      By installing or using Trod you agree to these terms and to the
-      <a href="./privacy.html">Privacy Policy</a>.
-    </p>
+    <h2>1. Who provides Trod</h2>
+    <p><strong>Wanderlab</strong> is the public brand behind Trod. The service is operated by <strong>Omar Ajruli</strong> in Estonia. Contact: <a href="mailto:ajruli.omar@gmail.com">ajruli.omar@gmail.com</a>.</p>
+    <p>These terms apply to the Trod app and Trod-operated websites. By using Trod, you agree to these terms and the <a href="./privacy.html">Privacy Policy</a>. If you do not agree, do not use the service.</p>
 
-    <h2>2. Eligibility and your account</h2>
+    <h2>2. Who can use Trod</h2>
     <ul>
-      <li>You must be at least 13 years old (16 in the EU, or the age of digital consent in your country).</li>
-      <li>You can play as a guest or create an account (email or Google sign-in). Keep your sign-in details to yourself; you are responsible for activity on your account.</li>
-      <li>One account is for one person — please don&rsquo;t share accounts.</li>
+      <li>You must be at least 13 years old.</li>
+      <li>If the law where you live requires permission from a parent or guardian, you must have that permission.</li>
+      <li>If you use Trod for an organisation, you confirm that you have authority to accept these terms for it.</li>
     </ul>
 
-    <h2>3. What Trod is</h2>
-    <p>
-      Trod reveals a map of the real world as you physically walk through it,
-      and tracks exploration progress, landmarks, quests and passport stamps.
-      The base map and the world content come from third-party data and may
-      contain errors — Trod is a game, not a navigation, safety or emergency
-      tool.
-    </p>
+    <h2>3. Accounts</h2>
+    <ul>
+      <li>You can start as a guest or create an account using email or Google sign-in.</li>
+      <li>Keep your sign-in details secure. You are responsible for activity carried out through your account unless you tell us promptly that it has been compromised.</li>
+      <li>Use accurate information and do not impersonate another person or organisation.</li>
+      <li>One personal account is for one person. Do not sell, transfer, or share access to it.</li>
+    </ul>
 
-    <h2>4. Fair play</h2>
+    <h2>4. What Trod is, and what it is not</h2>
+    <p>Trod reveals a game map as you move through the real world. It can track exploration, steps, landmarks, places, quests, friends, circles, and Atlas progress.</p>
     <div class="card">
-      <p style="margin-top:0;">Trod is built around honest walking. You agree not to:</p>
-      <ul>
-        <li>Fake or spoof your location, or use tools that simulate movement.</li>
-        <li>Pass off vehicle travel as walking to inflate progress.</li>
-        <li>Interfere with, reverse engineer, or attempt to bypass the app&rsquo;s data-integrity measures or access other users&rsquo; data.</li>
-        <li>Use Trod for anything unlawful, or to harass or harm others.</li>
-      </ul>
-      <p class="muted" style="margin-bottom:0;">
-        We may remove progress earned in breach of these rules, and may suspend
-        or close accounts for serious or repeated violations.
-      </p>
+      <p><strong>Trod is not a navigation, safety, medical, fitness, or emergency service.</strong></p>
+      <p style="margin-bottom:0;">Maps, place details, weather, routes, opening information, and third-party content can be incomplete, delayed, or wrong. Check official sources and your surroundings before making a real-world decision.</p>
     </div>
 
-    <h2>5. Walk safely — this matters</h2>
-    <div class="card">
-      <ul>
-        <li><strong>Keep your eyes on the world, not the screen.</strong> Watch for traffic, obstacles, other people and terrain.</li>
-        <li>Do not enter private property, restricted, dangerous or prohibited areas to reveal map. The map showing a place does not mean you may go there.</li>
-        <li>Follow local laws and use common sense about where and when you walk.</li>
-        <li>You play at your own risk; to the extent permitted by law we are not liable for injuries or losses arising from where or how you choose to walk.</li>
-      </ul>
-    </div>
-
-    <h2>6. Content and ownership</h2>
+    <h2>5. Explore safely</h2>
     <ul>
-      <li>The Trod app, its design, artwork and brand are ours. We grant you a personal, non-transferable licence to use the app for playing.</li>
-      <li>Map data &copy; <a href="https://www.maptiler.com/copyright/" rel="noopener">MapTiler</a> &copy; <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap contributors</a>.</li>
-      <li>Your exploration progress is yours — you can delete it (and your account) at any time from inside the app.</li>
+      <li>Pay attention to traffic, terrain, weather, other people, and local conditions. Do not use the screen when it is unsafe.</li>
+      <li>Do not trespass or enter private, restricted, closed, dangerous, or prohibited areas. A place appearing on the map does not give you access to it.</li>
+      <li>Follow local law and posted instructions.</li>
+      <li>Do not use Trod while driving. A passenger may use it, but the driver must stay focused on the road.</li>
+      <li>You choose where and how you travel. Use ordinary care and judgment.</li>
     </ul>
 
-    <h2>7. Price</h2>
-    <p>
-      Trod&rsquo;s core experience — walking, revealing the map, city progress
-      and your atlas — is free. If optional paid extras (such as cosmetic
-      upgrades) are added later, they will be clearly marked, and app-store
-      refund policies will apply to them.
-    </p>
-
-    <h2>8. The service is provided &ldquo;as is&rdquo;</h2>
-    <p>
-      Trod depends on GPS, third-party map and weather services, and your
-      device&rsquo;s sensors — none of which are perfect. We provide the app
-      &ldquo;as is&rdquo; and &ldquo;as available&rdquo;, without warranties of
-      uninterrupted service, accuracy of map or location data, or fitness for
-      a particular purpose. Progress may occasionally be affected by GPS error;
-      we may correct obvious data faults.
-    </p>
-
-    <h2>9. Limitation of liability</h2>
-    <p>
-      To the maximum extent permitted by law, our total liability for any
-      claims arising from the app is limited to the greater of EUR&nbsp;50 or
-      the amounts you paid us in the 12 months before the claim. We are not
-      liable for indirect or consequential damages, or for loss of game
-      progress caused by events outside our reasonable control. Nothing in
-      these terms limits liability that cannot be limited by law (including
-      consumer rights in your country of residence).
-    </p>
-
-    <h2>10. Ending things</h2>
+    <h2>6. Fair play and acceptable use</h2>
+    <p>Map reveal can grow through genuine travel by foot, car, bus, ferry, or train. Steps, streaks, and walking statistics are for real walking. You must not:</p>
     <ul>
-      <li>You can stop using Trod and delete your account at any time (You&nbsp;&rsaquo;&nbsp;Settings&nbsp;&rsaquo;&nbsp;Delete&nbsp;Account, or see <a href="./delete-account.html">the deletion page</a>).</li>
-      <li>We may suspend or terminate accounts that materially breach these terms, and may discontinue the service with reasonable notice.</li>
+      <li>Spoof location, simulate movement, tamper with sensor data, or use automation to create false progress.</li>
+      <li>Misrepresent vehicle travel as walking to inflate steps, streaks, or walking statistics.</li>
+      <li>Probe, attack, disrupt, overload, scrape, or bypass Trod's security, limits, permissions, or data-integrity controls.</li>
+      <li>Access another person's account or private data without permission.</li>
+      <li>Reverse engineer Trod except where applicable law expressly allows it.</li>
+      <li>Use Trod to threaten, harass, stalk, deceive, discriminate, or break the law.</li>
+    </ul>
+    <p>We can remove invalid progress, limit features, or suspend an account when reasonably necessary to protect the service or enforce these rules. We will consider context and provide notice where practical and legally required.</p>
+
+    <h2>7. Friends, circles, and sharing</h2>
+    <p>Social features expose information to other people by design. When a friendship is accepted, sharing controls are on by default. Depending on your settings, accepted friends can see profile information, exploration summaries, weekly activity, and a read-only explored-area map. Circle members can see the identity and aggregate activity described before joining.</p>
+    <p>Review Friends &rsaquo; Privacy before accepting people you do not know well. You can change individual switches, unfriend, block, or leave a circle. A setting change stops future access through Trod, but it cannot retrieve a screenshot or copy someone already made.</p>
+    <p>Do not use social features to monitor, pressure, or infer sensitive information about another person.</p>
+
+    <h2>8. Your content</h2>
+    <p>You keep ownership of content you submit, such as a community-gem name or note, profile content, and a circle name. You give Wanderlab a non-exclusive, worldwide, royalty-free licence to host, copy, format, moderate, and display that content only as needed to operate and protect the Trod service. This licence can continue for public contributions that remain after account deletion, unless the content is removed.</p>
+    <p>You confirm that you have the right to submit the content and that it does not:</p>
+    <ul>
+      <li>Violate another person's privacy, intellectual-property rights, or other rights.</li>
+      <li>Include unlawful, threatening, hateful, sexually exploitative, deceptive, or dangerous material.</li>
+      <li>Publish someone's home, private location, contact details, or other sensitive personal information without a lawful reason and their permission.</li>
+      <li>Promote trespass or unsafe access to a place.</li>
+    </ul>
+    <p>Community gems stay pending until reviewed. We can reject, hide, or remove content that violates these terms, creates a safety or privacy risk, or is not useful to the community. Public gem content can remain after account deletion with the reporter account link removed. You can email us to request review or removal of a contribution.</p>
+
+    <h2>9. Trod's content and licence to you</h2>
+    <p>Trod, Wanderlab branding, software, original artwork, and original interface content are owned by the operator or its licensors. Subject to these terms, you receive a limited, personal, non-exclusive, non-transferable, revocable licence to use Trod for its intended purpose.</p>
+    <p>Map data is credited to <a href="https://www.maptiler.com/copyright/" rel="noopener noreferrer">MapTiler</a> and <a href="https://www.openstreetmap.org/copyright" rel="noopener noreferrer">OpenStreetMap contributors</a>. Place text, images, and other material can carry separate source credits and licences.</p>
+
+    <h2>10. Third-party services and partner links</h2>
+    <p>Trod depends on services such as maps, weather, authentication, hosting, and place-content providers. Their availability and terms can change. Trod is not responsible for a third-party service or site beyond what mandatory law requires.</p>
+    <p>Some place cards include optional links to GetYourGuide or Viator. These links open an external service and can include an affiliate identifier. Wanderlab may receive a commission if you make a purchase, without changing your price. The external provider's terms, privacy policy, availability, cancellation, and refund rules apply to that transaction.</p>
+
+    <h2>11. Price and future purchases</h2>
+    <p>Trod's current core experience is free. If paid features are introduced, the price and material terms will be shown before purchase. Google Play billing and refund rules will apply to store purchases. Nothing in these terms removes mandatory consumer rights.</p>
+
+    <h2>12. Service changes and availability</h2>
+    <p>We can add, change, pause, or retire features to improve Trod, address safety or legal requirements, or keep the service sustainable. We will give reasonable notice before a material change that negatively affects an existing paid entitlement, unless urgent security or legal action is required.</p>
+    <p>We do not promise uninterrupted access or permanent preservation of game progress. We use reasonable care to keep the service available and data safe.</p>
+
+    <h2>13. Account suspension and deletion</h2>
+    <ul>
+      <li>You can stop using Trod at any time and delete your account in You &rsaquo; Settings &rsaquo; Delete account. You can also use the <a href="./delete-account.html">external deletion instructions</a>.</li>
+      <li>We can restrict or close an account for a serious or repeated breach, unlawful use, fraud, security risk, or harm to other people or the service.</li>
+      <li>Deletion removes account-linked data as described in the Privacy Policy. Public community contributions and circle containers used by remaining members can continue after the account link or membership is removed.</li>
+      <li>Sections that need to survive termination, including ownership, content licences for retained contributions, disclaimers, liability limits, and dispute terms, remain in effect.</li>
     </ul>
 
-    <h2>11. Changes to these terms</h2>
-    <p>
-      If we make material changes we will give at least 14 days&rsquo; notice in
-      the app before they take effect. Continuing to use Trod after that means
-      you accept the updated terms.
-    </p>
+    <h2>14. Disclaimers</h2>
+    <p>To the extent allowed by law, Trod is provided on an "as is" and "as available" basis. Location signals, sensors, maps, weather, connectivity, and third-party content are imperfect. We do not promise that Trod will always be accurate, available, secure, or suitable for a particular route, activity, or result.</p>
+    <p>These disclaimers do not exclude warranties or rights that cannot legally be excluded.</p>
 
-    <h2>12. Governing law</h2>
-    <p>
-      These terms are governed by the laws of Estonia. Disputes that cannot be
-      resolved amicably belong to the courts of Estonia (Harju County Court,
-      Tallinn), unless mandatory consumer law in your country of residence
-      gives you the right to your local courts.
-    </p>
+    <h2>15. Liability</h2>
+    <p>Nothing in these terms limits liability for death or personal injury caused by negligence, fraud, wilful misconduct, or any liability that applicable law does not allow us to limit.</p>
+    <p>Subject to that rule, and to the maximum extent permitted by law, Wanderlab and the operator are not liable for indirect or consequential loss, loss caused by unsafe or unlawful real-world choices, third-party services, inaccurate map or place information, device or network failure, or events outside reasonable control.</p>
+    <p>Where a financial cap is legally permitted, total liability connected with Trod will not exceed the greater of EUR&nbsp;50 or the amount you paid for Trod in the 12 months before the event giving rise to the claim. Mandatory consumer-law remedies remain available.</p>
 
-    <h2>13. Contact</h2>
-    <p>
-      Omar Ajruli &middot; Estonia &middot;
-      <a href="mailto:ajruli.omar@gmail.com">ajruli.omar@gmail.com</a>
-    </p>
+    <h2>16. Changes to these terms</h2>
+    <p>We can update these terms when the service, law, or risk changes. For a material change, we will provide reasonable notice in the app or on the service before it takes effect where required. The effective date at the top identifies the current version.</p>
 
-    <div class="foot">
-      Trod &middot; Terms of Service &middot; Effective 11 June 2026 &middot;
-      <a href="./index.html">All Trod legal pages</a>
-    </div>
+    <h2>17. Governing law and disputes</h2>
+    <p>Estonian law governs these terms, without taking away mandatory consumer protections that apply where you live. Please contact us first so we can try to resolve a problem directly. If it cannot be resolved, Estonian courts have jurisdiction unless mandatory law gives you the right to bring the claim elsewhere.</p>
+
+    <h2>18. Contact</h2>
+    <p>Wanderlab / Trod<br />Operator: Omar Ajruli, Estonia<br /><a href="mailto:ajruli.omar@gmail.com">ajruli.omar@gmail.com</a></p>
+
+    <footer>
+      <div>Trod Terms of Service &middot; Effective 7 August 2026</div>
+      <div class="footer-links">
+        <a href="./privacy.html">Privacy</a>
+        <a href="./delete-account.html">Delete account</a>
+        <a href="https://play.google.com/store/apps/details?id=com.trod.app" rel="noopener noreferrer">Google Play</a>
+        <a href="https://gettrod.com/">gettrod.com</a>
+      </div>
+    </footer>
   </main>
 </body>
 </html>
